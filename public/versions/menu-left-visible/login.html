@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SUL-HRMS Login</title>
+        <link href="../../modules/images/fav.png" rel="shortcut icon">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+
+        <!-- VENDORS -->
+        <!-- v2.0.0 -->
+        <link rel="stylesheet" type="text/css" href="../../vendors/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/jscrollpane/style/jquery.jscrollpane.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/ladda/dist/ladda-themeless.min.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/bootstrap-select/dist/css/bootstrap-select.min.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/select2/dist/css/select2.min.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/fullcalendar/dist/fullcalendar.min.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/bootstrap-sweetalert/dist/sweetalert.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/summernote/dist/summernote.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/owl.carousel/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/ionrangeslider/css/ion.rangeSlider.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/datatables/media/css/dataTables.bootstrap4.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/c3/c3.min.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/chartist/dist/chartist.min.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/nprogress/nprogress.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/jquery-steps/demo/css/jquery.steps.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/dropify/dist/css/dropify.min.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/font-linearicons/style.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/font-icomoon/style.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/cleanhtmlaudioplayer/src/player.css">
+        <link rel="stylesheet" type="text/css" href="../../vendors/cleanhtmlvideoplayer/src/player.css">
+        <script src="../../vendors/jquery/dist/jquery.min.js"></script>
+        <script src="../../vendors/tether/dist/js/tether.min.js"></script>
+        <script src="../../vendors/jquery-ui/jquery-ui.min.js"></script>
+        <script src="../../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../../vendors/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+        <script src="../../vendors/jscrollpane/script/jquery.jscrollpane.min.js"></script>
+        <script src="../../vendors/spin.js/spin.js"></script>
+        <script src="../../vendors/ladda/dist/ladda.min.js"></script>
+        <script src="../../vendors/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+        <script src="../../vendors/select2/dist/js/select2.full.min.js"></script>
+        <script src="../../vendors/html5-form-validation/dist/jquery.validation.min.js"></script>
+        <script src="../../vendors/jquery-typeahead/dist/jquery.typeahead.min.js"></script>
+        <script src="../../vendors/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+        <script src="../../vendors/autosize/dist/autosize.min.js"></script>
+        <script src="../../vendors/bootstrap-show-password/bootstrap-show-password.min.js"></script>
+        <script src="../../vendors/moment/min/moment.min.js"></script>
+        <script src="../../vendors/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="../../vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+        <script src="../../vendors/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
+        <script src="../../vendors/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js"></script>
+        <script src="../../vendors/summernote/dist/summernote.min.js"></script>
+        <script src="../../vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+        <script src="../../vendors/ionrangeslider/js/ion.rangeSlider.min.js"></script>
+        <script src="../../vendors/nestable/jquery.nestable.js"></script>
+        <script src="../../vendors/datatables/media/js/jquery.dataTables.min.js"></script>
+        <script src="../../vendors/datatables/media/js/dataTables.bootstrap4.js"></script>
+        <script src="../../vendors/datatables-fixedcolumns/js/dataTables.fixedColumns.js"></script>
+        <script src="../../vendors/datatables-responsive/js/dataTables.responsive.js"></script>
+        <script src="../../vendors/editable-table/mindmup-editabletable.js"></script>
+        <script src="../../vendors/d3/d3.min.js"></script>
+        <script src="../../vendors/c3/c3.min.js"></script>
+        <script src="../../vendors/chartist/dist/chartist.min.js"></script>
+        <script src="../../vendors/peity/jquery.peity.min.js"></script>
+        <script src="../../vendors/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+        <script src="../../vendors/jquery-countTo/jquery.countTo.js"></script>
+        <script src="../../vendors/nprogress/nprogress.js"></script>
+        <script src="../../vendors/jquery-steps/build/jquery.steps.min.js"></script>
+        <script src="../../vendors/chart.js/dist/Chart.bundle.min.js"></script>
+        <script src="../../vendors/dropify/dist/js/dropify.min.js"></script>
+        <script src="../../vendors/cleanhtmlaudioplayer/src/jquery.cleanaudioplayer.js"></script>
+        <script src="../../vendors/cleanhtmlvideoplayer/src/jquery.cleanvideoplayer.js"></script>
+
+        <!-- CLEAN UI ADMIN TEMPLATE MODULES-->
+        <!-- v2.0.0 -->
+        <link rel="stylesheet" type="text/css" href="../../modules/core/common/core.cleanui.css">
+        <link rel="stylesheet" type="text/css" href="../../modules/vendors/common/vendors.cleanui.css">
+        <link rel="stylesheet" type="text/css" href="../../modules/layouts/common/layouts-pack.cleanui.css">
+        <link rel="stylesheet" type="text/css" href="../../modules/themes/common/themes.cleanui.css">
+        <link rel="stylesheet" type="text/css" href="../../modules/menu-left/common/menu-left.cleanui.css">
+        <link rel="stylesheet" type="text/css" href="../../modules/menu-right/common/menu-right.cleanui.css">
+        <!--<link rel="stylesheet" type="text/css" href="../../modules/top-bar/common/top-bar.cleanui.css">-->
+        <link rel="stylesheet" type="text/css" href="../../modules/footer/common/footer.cleanui.css">
+        <link rel="stylesheet" type="text/css" href="../../modules/pages/common/pages.cleanui.css">
+        <link rel="stylesheet" type="text/css" href="../../modules/ecommerce/common/ecommerce.cleanui.css">
+        <link rel="stylesheet" type="text/css" href="../../modules/apps/common/apps.cleanui.css">
+        <script src="../../modules/menu-left/common/menu-left.cleanui.js"></script>
+        <script src="../../modules/menu-right/common/menu-right.cleanui.js"></script>
+    </head>
+    <body>
+        <!-- START: pages/login-beta -->
+        <div class="cat__pages__login" style="background-image: url(../../modules/pages/common/img/login/4.jpg); background-size: cover; background-position: center center; width: 100% !important; height: 100% !important; position: absolute; top: 0;
+left: 0; overflow: hidden !important;">
+            <div class="cat__pages__login__block cat__pages__login__block--extended">
+                <div class="row pt-5 pb-5">
+                    <div class="col-xl-12">
+                        <div class="cat__pages__login__block__inner mt-5 mb-5">
+                            <div class="cat__pages__login__block__form">
+                                <img src="../../modules/images/SUL_LOGO_Black_Update.png" class="img-responsive" style="width: 180px; height: 53px; margin-left: 22%;"/>
+                                <hr/>
+                                <h4 class="text-uppercase mt-4">
+                                    <strong>Please log in</strong>
+                                </h4>
+                                <br />
+                                <form id="form-validation" name="form-validation" method="POST">
+                                    <div class="form-group">
+                                        <label class="form-label">Username</label>
+                                        <input id="validation-email"
+                                               class="form-control"
+                                               placeholder="Email or Username"
+                                               name="validation[email]"
+                                               type="text"
+                                               data-validation="[EMAIL]">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Password</label>
+                                        <input id="validation-password"
+                                               class="form-control password"
+                                               name="validation[password]"
+                                               type="password" data-validation="[L>=6]"
+                                               data-validation-message="$ must be at least 6 characters"
+                                               placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <a href="javascript: void(0);" class="pull-right cat__core__link--blue cat__core__link--underlined">Forgot Password?</a>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="example6" checked>
+                                                Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn btn-primary mr-3">Sign In</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="cat__pages__login__block__sidebar">
+                                <h4 class="cat__pages__login__block__sidebar__title">
+                                    <strong>How To Log In?</strong>
+                                </h4>
+                                <div class="cat__pages__login__block__sidebar__item text-justify">
+                                    If you are already registered in this system by administrator, please type your employee code and password in the respective fields to log in 
+                                </div>
+                                <div class="cat__pages__login__block__sidebar__item text-justify">
+                                    Or, contact with system administrator for user registration.
+                                </div>
+                                <div class="cat__pages__login__block__sidebar__place">
+                                    <i class="icmn-location mr-3"><!-- --></i>
+                                    New York, USA
+                                    <br/>
+                                    <i class="icmn-calendar mr-3"><!-- --></i>
+                                    22th April, 2017
+                                    <br/>
+                                    <i class="icmn-clock mr-3"><!-- --></i>
+                                    12:06 PM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__footer" style="/*position: absolute; bottom: 0; left: 0;*/ width: 100% !important; border-top-left-radius: 0px; border-top-right-radius: 0px;">
+            <div class="row">
+                <div class="col-md-4">
+                    <strong>
+                        <a href="http://systechunimax.com/" target="_blank" class="text-primary">Systech Unimax Ltd.</a> Copyright © 2017. All rights reserved.
+                    </strong>
+                </div>
+                <div class="col-md-4 text-center">
+                    <strong>SUL - HRMS (Current Version - 2.0.0)</strong>
+                </div>
+                <div class="col-md-4">
+                    <a href="http://systechunimax.com/" target="_blank" class="cat__footer__company">
+                        <img class="img-responsive" src="../../modules/images/sul-f-logo-BLACK.png" title="Systech Unimax Ltd.">
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- END: pages/login-beta -->
+
+        <!-- START: page scripts -->
+        <script>
+            $(function () {
+
+                // Form Validation
+                $('#form-validation').validate({
+                    submit: {
+                        settings: {
+                            inputContainer: '.form-group',
+                            errorListClass: 'form-control-error',
+                            errorClass: 'has-danger'
+                        }
+                    }
+                });
+
+                // Show/Hide Password
+                $('.password').password({
+                    eyeClass: '',
+                    eyeOpenClass: 'icmn-eye',
+                    eyeCloseClass: 'icmn-eye-blocked'
+                });
+
+                // Switch to fullscreen
+                $('.switch-to-fullscreen').on('click', function () {
+                    $('.cat__pages__login').toggleClass('cat__pages__login--fullscreen');
+                })
+
+                // Change BG
+                $('.random-bg-image').on('click', function () {
+                    var min = 1, max = 5,
+                            next = Math.floor($('.random-bg-image').data('img')) + 1,
+                            final = next > max ? min : next;
+
+                    $('.random-bg-image').data('img', final);
+                    $('.cat__pages__login').data('img', final).css('backgroundImage', 'url(../../modules/pages/common/img/login/' + final + '.jpg)');
+                })
+
+            });
+        </script>
+        <!-- END: page scripts -->
+        
+    </body>
+</html>

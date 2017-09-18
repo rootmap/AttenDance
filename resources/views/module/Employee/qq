@@ -1,0 +1,32 @@
+select t1.employee_id, 
+       t1.date, 
+       min(t1.time) as in_time, 
+       max(t1.time) as out_time
+  from attendance_raw t1
+ where (t1.date BETWEEN '2017-04-26' AND '2017-05-04') AND t1.employee_id='rpac0578'
+ group by t1.date, t1.employee_id;
+
+
+
+ #2nd
+
+ SELECT t.*,TIMEDIFF(t.out_time,t.in_time) as total_working_hour  FROM (select t1.employee_id, 
+       t1.date, 
+       min(t1.time) as in_time, 
+       max(t1.time) as out_time
+  from attendance_raw t1
+ where (t1.date BETWEEN '2017-04-26' AND '2017-05-16') AND t1.employee_id='rpac0578'
+ group by t1.date, t1.employee_id) AS t
+
+ #3rd 
+ SELECT t.*,TIMEDIFF(t.out_time,t.in_time) as total_working_hour,
+CASE TIMEDIFF(t.out_time,t.in_time) 
+WHEN '00:00:00' THEN 'A'
+ELSE 'P' END AS day_status
+FROM (select t1.employee_id, 
+       t1.date, 
+       min(t1.time) as in_time, 
+       max(t1.time) as out_time
+  from attendance_raw t1
+ where (t1.date BETWEEN '2017-04-26' AND '2017-05-26')
+ group by t1.date, t1.employee_id) AS t
